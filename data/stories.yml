@@ -1,0 +1,57 @@
+version: "3.1"
+
+stories:
+- story: show services
+  steps:
+    - intent: ask_services
+    - action: utter_services
+
+- story: show plans
+  steps:
+    - intent: ask_plans
+    - action: utter_plans
+
+- story: signup flow
+  steps:
+    - intent: ask_signup
+    - action: utter_signup
+
+- story: contact info
+  steps:
+    - intent: ask_contact
+    - action: utter_contact
+
+- story: company info
+  steps:
+    - intent: ask_company
+    - action: utter_company
+
+- story: payment info
+  steps:
+    - intent: ask_payment
+    - action: utter_payment
+
+- story: support info
+  steps:
+    - intent: ask_support
+    - action: utter_support
+
+- story: show destinations
+  steps:
+    - intent: ask_destinations
+    - action: utter_destinations
+
+- story: show trade signup
+  steps:
+    - intent: ask_trade_signup
+    - action: action_trade_signup
+
+- story: show test route
+  steps:
+    - intent: ask_test_route
+    - action: action_test_route
+
+- story: show rate details
+  steps:
+    - intent: ask_rate
+    - action: action_show_rate

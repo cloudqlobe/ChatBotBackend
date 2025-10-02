@@ -1,0 +1,123 @@
+version: "3.1"
+nlu:
+
+- intent: greet
+  examples: |
+    - hi
+    - hello there
+    - hey bot
+    - good morning
+    - good evening
+    - how are you
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you tomorrow
+    - later
+    - talk soon
+
+- intent: thank_you
+  examples: |
+    - thanks
+    - tnx
+    - thank you
+    - much appreciated
+    - cheers
+    - great service
+
+- intent: ask_services
+  examples: |
+    - what services do you offer
+    - tell me your services
+    - what is CLI voice termination
+    - explain CC routes
+    - what is call center routing
+    - do you provide custom solutions
+    - do you offer VoIP
+
+- intent: ask_plans
+  examples: |
+    - what plans do you have
+    - tell me pricing plans
+    - silver vs gold plan
+    - platinum package details
+    - custom plan pricing
+    - do you offer free trial
+    - do you provide discounts
+
+- intent: ask_signup
+  examples: |
+    - how do I sign up
+    - sign up process
+    - register an account
+    - create account
+    - do I get free credit
+    - how much credit do I get for free
+
+- intent: ask_contact
+  examples: |
+    - how can I contact you
+    - your email
+    - phone number
+    - company address
+    - where are you located
+    - give me support email
+
+- intent: ask_company
+  examples: |
+    - tell me about cloudqlobe
+    - what is cloudqlobe
+    - what do you do
+    - who are you
+    - describe your company
+
+- intent: ask_payment
+  examples: |
+    - what payment methods do you support
+    - can I pay with PayPal
+    - do you accept crypto
+    - how can I recharge
+    - billing options
+
+- intent: ask_support
+  examples: |
+    - do you provide support
+    - how can I get help
+    - do you have 24/7 support
+    - do you have live chat
+
+- intent: ask_destinations
+  examples: |
+    - what are your destinations
+    - what are the major destinations
+    - which countries do you serve
+    - list your major destinations
+    - show destinations
+    - where do you operate
+
+- intent: ask_rate
+  examples: |
+    - show rates for [India](destination)
+    - what is the [USA](destination) rate
+    - rate details for [Canada](destination)
+    - CLI rates for [UK](destination)
+    - CC rates for [India](destination)
+    - how much does [UAE](destination) cost
+    - show me the [Australia](destination) rates
+
+- intent: ask_trade_signup
+  examples: |
+    - how to open trade account
+    - trade signup
+    - register for trade
+    - I want a trade account
+    - open trade account
+
+- intent: ask_test_route
+  examples: |
+    - how to test route
+    - route testing
+    - test CLI route
+    - verify call route

@@ -1,0 +1,15 @@
+# Python ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Virtual env
+venv/
+.env/
+*.egg-info/
+
+# Logs
+*.log

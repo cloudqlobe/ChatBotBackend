@@ -1,0 +1,110 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - thank_you
+  - ask_services
+  - ask_plans
+  - ask_signup
+  - ask_contact
+  - ask_company
+  - ask_payment
+  - ask_support
+  - ask_destinations
+  - ask_rate
+  - ask_trade_signup
+  - ask_test_route
+
+entities:
+  - location
+  - destination
+
+slots:
+  destination:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: destination
+
+responses:
+  utter_greet:
+    - text: "Hello! Welcome to CloudQlobe 🌍 How can I help you?"
+    - text: "Hi there 👋 Looking for rates, services, or support?"
+
+  utter_goodbye:
+    - text: "Goodbye! Thanks for visiting CloudQlobe 🚀"
+    - text: "See you later! Stay connected 📞"
+
+  utter_thank_you:
+    - text: "You're most welcome 🙏"
+    - text: "Happy to help anytime!"
+
+  utter_services:
+    - text: |
+        CloudQlobe provides:
+        ✅ CLI Voice Termination  
+        ✅ CC Routes (Call Center Routing)  
+        ✅ Wholesale VoIP services  
+        ✅ Custom rate plans and solutions
+
+  utter_plans:
+    - text: |
+        Our plans include:
+        • **Silver** — low cost, frequent routing updates  
+        • **Gold** — premium quality, FAS-free routes  
+        • **Platinum** — high capacity, direct operator access  
+        • **Custom** — fully tailored solutions  
+        🎁 Signup bonus: $2 free credit
+
+  utter_signup:
+    - text: |
+        👉 To sign up: click **Sign Up** on our website.  
+        You’ll get $2 free credit to start testing.  
+        Quick setup in 10 minutes!
+
+  utter_contact:
+    - text: |
+        📧 marketing@cloudqlobe.com  
+        📞 +44 7418365876  
+        📍 44 Heung Yip Road, Southern District, Hong Kong
+
+  utter_company:
+    - text: |
+        CloudQlobe is a global wholesale VoIP provider.  
+        We offer CLI voice termination, CC routing, and custom telecom solutions.  
+        Our mission: enable carriers & call centers to scale worldwide.
+
+  utter_payment:
+    - text: |
+        💳 Payment options include: Bank Transfer, PayPal, Crypto, and more.  
+        No balance limit, multiple recharge methods available.
+
+  utter_support:
+    - text: |
+        We provide 24/7 live support 💡  
+        You can reach us anytime via email, WhatsApp, or website chat.
+
+  utter_destinations:
+    - text: "Our major destinations include: India, USA, Canada, UK, UAE, Germany, Australia, Singapore."
+
+  utter_test_route:
+    - text: |
+        To test a route:
+        1️⃣ Open a trade account.  
+        2️⃣ Request trial route testing from your dashboard.  
+        3️⃣ Configure SIP/VoIP settings.  
+        4️⃣ Test sample calls to measure route quality.
+
+  utter_trade_signup:
+    - text: "To open a trade account, please visit: https://cloudqlobe.com/signup"
+
+  utter_rate_details:
+    - text: "Here are the rate details for {destination}:"
+
+actions:
+  - action_show_rate
+  - action_show_support
+  - action_trade_signup
+  - action_test_route
