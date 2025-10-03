@@ -1,0 +1,6 @@
+[
+  {
+    "name": "destination",
+    "pattern": "(\\bIndia\\b|\\bUSA\\b|\\bUnited\\ States\\b|\\bCanada\\b|\\bUK\\b|\\bUnited\\ Kingdom\\b|\\bUAE\\b|\\bAustralia\\b|\\bFrance\\b|\\bMexico\\b|\\bGermany\\b|\\bSingapore\\b|\\bJapan\\b|\\bBrazil\\b|\\bSouth\\ Africa\\b)"
+  }
+]

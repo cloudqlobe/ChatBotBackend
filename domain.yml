@@ -17,16 +17,36 @@ intents:
   - ask_test_route
 
 entities:
-  - location
   - destination
+  - category
+  - profile
+  - qualityDescription
 
 slots:
   destination:
     type: text
-    influence_conversation: true
     mappings:
       - type: from_entity
         entity: destination
+        
+  category:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: category
+
+  profile:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: profile
+
+  qualityDescription:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: qualityDescription
+
 
 responses:
   utter_greet:
@@ -98,7 +118,7 @@ responses:
         4️⃣ Test sample calls to measure route quality.
 
   utter_trade_signup:
-    - text: "To open a trade account, please visit: https://cloudqlobe.com/signup"
+    - text: "To open a trade account, please visit: https://cloudqlobe.com/signup. After creating the account, our team will contact you shortly."
 
   utter_rate_details:
     - text: "Here are the rate details for {destination}:"

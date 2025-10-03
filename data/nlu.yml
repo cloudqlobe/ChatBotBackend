@@ -96,7 +96,7 @@ nlu:
     - list your major destinations
     - show destinations
     - where do you operate
-
+    
 - intent: ask_rate
   examples: |
     - show rates for [India](destination)
@@ -120,4 +120,5 @@ nlu:
     - how to test route
     - route testing
     - test CLI route
+    - test CC route
     - verify call route
